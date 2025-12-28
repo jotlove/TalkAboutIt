@@ -25,8 +25,8 @@ const ChatContainer = () =>{
 }, [selectedUser._id, getMessages])
 
 useEffect(() => {
-  if(messageEndRef.current && messages);
-  messageEndRef.current.scrollIntoView({behaivor: "smooth"});
+  if(messageEndRef.current && messages)
+  messageEndRef.current.scrollIntoView({behavior: "smooth"});
 }, [messages]);
 
 if(isMessagesLoading){
